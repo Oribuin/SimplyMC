@@ -50,7 +50,7 @@
       return showError('<p class="subtitle">⚠️ Not a valid URL</p> This is not a timings link.')
     }
     const code = link.replace('/d=', '/?id=').replace('timin.gs', 'timings.aikar.co').split('#')[0].split('\n')[0].split('/?id=')[1];
-    window.location.href = `/timings-result/${code}`;
+    window.location.href = `./timings-result/${code}`;
   }
 </script>
 

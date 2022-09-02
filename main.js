@@ -1,7 +1,7 @@
 const { app, BrowserWindow } = require('electron');
 const ejse = require('ejs-electron');
 const path = require("path");
-
+const {autoUpdater} = require("electron-updater");
 let mainWindow;
 
 // The absolute path of current this directory.
@@ -14,6 +14,7 @@ const renderTemplate = (mainWindow, template, data = {}) => {
     // Default base data which passed to the ejs template by default.
     ejse.data({
         path: path.join(templateDir, template),
+        error: null,
     });
 
     // Load the template
