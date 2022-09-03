@@ -12,7 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/AkiraDevelopment/SimplyMC.git"
   },
-  "author": "Akiradev, Esophose, saboooor",
+  "author": {
+    "name": "AkiraDev",
+    "email": "akira.devjs@gmail.com"
+  },
   "license": "AGPL-3.0",
   "bugs": {
     "url": "https://github.com/AkiraDevelopment/SimplyMC/issues"
@@ -20,7 +23,6 @@
   "homepage": "https://github.com/AkiraDevelopment/SimplyMC#readme",
   "build": {
     "appId": "xyz.akiradev.simplymc",
-    "maintainer": "AkiraDev",
     "linux": {
       "target": [
         "AppImage",
