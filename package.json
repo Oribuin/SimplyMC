@@ -13,13 +13,14 @@
     "url": "git+https://github.com/AkiraDevelopment/SimplyMC.git"
   },
   "author": "Akiradev, Esophose, saboooor",
-  "license": "ISC",
+  "license": "AGPL-3.0",
   "bugs": {
     "url": "https://github.com/AkiraDevelopment/SimplyMC/issues"
   },
   "homepage": "https://github.com/AkiraDevelopment/SimplyMC#readme",
   "build": {
     "appId": "xyz.akiradev.simplymc",
+    "maintainer": "AkiraDev",
     "linux": {
       "target": [
         "AppImage",
@@ -31,9 +32,11 @@
     },
     "win": {
       "target": "NSIS",
-      "icon": "./site/assets/images/icon.png"
+      "icon": "./site/assets/images/icon.png",
+      "publisherName": "AkiraDev"
     },
     "mac": {
+      "target": "default",
       "category": "public.app-category.utilities",
       "icon": "./site/assets/images/icon.png"
     }
