@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron');
+const client = require('discord-rich-presence')("1016511847953858670");
 const ejse = require('ejs-electron');
 const path = require("path");
 const {autoUpdater} = require("electron-updater");
@@ -26,5 +27,13 @@ const renderTemplate = (mainWindow, template, data = {}) => {
 
 app.on('ready', () => {
     mainWindow = new BrowserWindow({ show: false });
+    const startTimstamp = Date.now()
     renderTemplate(mainWindow, 'index.ejs');
+    mainWindow.webContents.on("page-title-updated", (event, title, explicitSet) =>{
+        client.updatePresence({
+            state: title,
+            largeImageKey: 'icon',
+            startTimestamp: startTimstamp
+        })
+    })
 });
