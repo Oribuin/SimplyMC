@@ -31,17 +31,17 @@
         "tar.gz"
       ],
       "category": "Utility",
-      "icon": "./site/assets/images/icon_512x512.png.png"
+      "icon": "./site/assets/images/icon_512x512.png"
     },
     "win": {
       "target": "NSIS",
-      "icon": "./site/assets/images/icon_512x512.png.png",
+      "icon": "./site/assets/images/icon_512x512.png",
       "publisherName": "AkiraDev"
     },
     "mac": {
       "target": "default",
       "category": "public.app-category.utilities",
-      "icon": "./site/assets/images/icon_512x512.png.png"
+      "icon": "./site/assets/images/icon_512x512.png"
     }
   },
   "dependencies": {
