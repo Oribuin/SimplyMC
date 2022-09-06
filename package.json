@@ -6,8 +6,8 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "build": "electron-builder -wl",
-    "buildmac": "electron-builder -m"
+    "build": "electron-builder -wl --publish never",
+    "buildmac": "electron-builder -m --publish never"
   },
   "repository": {
     "type": "git",
